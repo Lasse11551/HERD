@@ -1,0 +1,47 @@
+What is PHP?
+
+Php står for hypertext processor, som er et open scource scripting som bliver primært brugt til web programmering
+I forhold til sprog som java eller c++, som skal compiles for at kunne køres, skal php og javascript bruge en interpreter til at køre.
+I modsætning til javascript som kører på en browser, skal php bruge en server for at kunne køre.
+Når en webservice kører med php bliver der lavet en request fra client siden, til serveren, som efterfølgende interperter/processer php'en. 
+Dertil kan det også benytte sig af databaser eller andre third party API'scource
+
+Hvorfor lære PHP?
+
+Kan være simpelt - tiltrækker mange programmører - Kan også ses som en svaghed
+Kan være et kraftfuldt værktøj som man kan bygge CLI tools med
+Kan benyttes til at bygge website og web apps, til dette har PHP et godt ecosystem og mange frameworks
+
+Er PHP dødt?
+
+PHP bruges på over 75% af hjemmesider
+
+Basic PHP
+
+Install & setup
+Syntax & operators
+Variables & data types
+Control Structures & functions
+Type casting & error handling
+php.ini / web server configs
+Working with arrays
+Working with databaser
+
+Intermediate PHP (OOP)
+
+Classes & methods
+Object oriented PHPCode style & processerNamespaces & autoloading
+dependency management
+Super globals ($_*)
+Cookies & sessions
+Databases
+
+Advanced PHP
+
+Testing, phpUnit, TDD, BDD
+Intro to MVC & ROuting
+Dependency injection container
+caching & security
+frameworksPHP 8
+Hosting & deployment
+Best practices
