@@ -1,10 +1,9 @@
 <?php
 
-//Tjek videoen for at forstå composer - bruges til at holde styr på dependencies og autoloader
+declare(strict_types=1);
 
-use App\DB;
-use App\PaymentGateway\StaticPaddle\Transaction2;
-use App\Enums\Status;
+use App\Toaster;
+use App\ToasterPro;
 
 spl_autoload_register(function($class) { // En autoloader må ikke returnere noget eller kaste en fejl/error
     $path = __DIR__ . '/../' . lcfirst(str_replace('\\', '/', $class)) . '.php';
@@ -14,6 +13,10 @@ spl_autoload_register(function($class) { // En autoloader må ikke returnere nog
     }
 });
 
-$transaction = new Transaction2(25);
 
-$db = DB::getInstance([]); //Single instance
+$toaster = new ToasterPro();
+
+$toaster->addSlice('bread');
+$toaster->addSlice('bread');
+$toaster->addSlice('bread');
+$toaster->toastBagel();
